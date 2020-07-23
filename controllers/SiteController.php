@@ -131,6 +131,10 @@ class SiteController extends Controller
         }
 
     }
+    public function  actionShow(){
+         $this->layout = 'basic';
+         return $this->render('show', ['message' => 'Hi']);
+    }
 
     /**
      * Displays about page.

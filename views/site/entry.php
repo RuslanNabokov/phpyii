@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
+<?php // debug(Yii::$app);     ?>
 <?php $form = ActiveForm::begin(); ?>
 
 <?= $form->field($model, 'name') ?>
