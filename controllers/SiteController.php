@@ -13,6 +13,7 @@ use app\models\EntryForm;
 
 class SiteController extends Controller
 {
+    public $layout = 'main';
     /**
      * {@inheritdoc}
      */
@@ -123,11 +124,12 @@ class SiteController extends Controller
     }
 
     public  function  actionEntry(){
+
         $model = new EntryForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            return $this->render('entry-confirm', ['model' => $model]);
+            return $this->render('index', ['model' => $model]);
         }else{
-            return $this->render('entry', ['model' =>  $model] );
+            return $this->render('index', ['model' =>  $model] );
         }
 
     }
