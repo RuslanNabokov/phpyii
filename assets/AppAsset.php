@@ -33,13 +33,16 @@ class AppAsset extends AssetBundle
 
     ];
     public $js = [
+
         'js/main.js',
-//        "js/jquery.js",
+        "js/jquery.js",
+        'js/jquery-ui.js',
 //	"js/bootstrap.min.js",
 	"js/jquery.scrollUp.min.js",
 	"js/price-range.js",
     "js/jquery.prettyPhoto.js",
     "js/main.js",
+
 
     ];
     public $depends = [
