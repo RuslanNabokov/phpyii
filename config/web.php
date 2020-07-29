@@ -45,14 +45,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-            ],
+            'category/<id:\d+>' => 'category/view'   // Ссылка соответсвует контролеру category actions view
+                ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
